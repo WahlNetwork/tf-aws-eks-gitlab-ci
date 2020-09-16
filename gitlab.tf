@@ -95,11 +95,11 @@ data "aws_vpc" "vpc" {
 
 # Provides an AWS security group for the GitLab EKS Cluster
 resource "aws_security_group" "gitlab" {
-  name        = "gitlab-eks-octo-services-usw2"
+  name        = "gitlab-eks-sg"
   description = "GitLab EKS Cluster"
   vpc_id      = data.aws_vpc.vpc.id
   tags = {
-    Name        = "gitlab-eks-octo-services-usw2"
+    Name        = "gitlab-eks-sg"
     environment = var.aws_tag_environment
     source      = "Terraform"
   }
