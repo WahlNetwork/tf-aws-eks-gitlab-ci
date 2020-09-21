@@ -14,7 +14,7 @@ Below is a diagram showing how the EKS cluster service role works:
 
 The `gitlab.tf` file configures an Amazon IAM Cross-Account Role that allows GitLab to deploy and manage an EKS cluster for CI runners to execute pipeline jobs.
 
-*Note: You can remove this file, and related variable configurations, if you only wish to deploy the EKS Cluster Service Role without using GitLab.*
+> Note: You can remove the `gitlab.tf` file, and related variable configurations, if you only wish to deploy the EKS Cluster Service Role without using GitLab.
 
 Below is a diagram showing how the GitLab cross-account role works:
 
