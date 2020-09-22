@@ -6,6 +6,8 @@ Configures an Amazon Elastic Kubernetes Service (EKS) cluster for GitLab CI runn
 
 The `main.tf` file configures an Amazon IAM Role and attaches the `AmazonEKSClusterPolicy`. This allows the deployment of one or more EKS Clusters into your AWS account as documented [here](https://docs.aws.amazon.com/eks/latest/userguide/service_IAM_role.html).
 
+> Check out [this video](https://youtu.be/JXDSxKt72bE) to see the process in action!
+
 Below is a diagram showing how the EKS cluster service role works:
 
 ![Amazon EKS Cluster Service Role](img/eks.png)
