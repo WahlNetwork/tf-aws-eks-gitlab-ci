@@ -33,6 +33,7 @@ data "aws_iam_policy_document" "gitlab" {
       "iam:CreateServiceLinkedRole",
       "iam:GetRole",
       "iam:ListRoles",
+      "iam:ListAttachedRolePolicies", # Added per https://gitlab.com/gitlab-org/gitlab/-/issues/232960
       "iam:PassRole",
       "ssm:GetParameters"
     ]
